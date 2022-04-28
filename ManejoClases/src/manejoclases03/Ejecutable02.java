@@ -26,7 +26,18 @@ public class Ejecutable02 {
         h1.establecerNombre("Hospital Vaca Ortíz");
         
         System.out.printf("%s\n", h1.obtenerNombre());
+        //
+        System.out.printf("%s\n", h2.obtenerNombre());
         
+        h2.establecerNombre("Hospital Militar de Loja");
+        
+        System.out.printf("%s\n", h2.obtenerNombre());
+        //
+        System.out.printf("%s\n", h3.obtenerNombre());
+        
+        h3.establecerNombre("hospital Mnanuel IM");
+        
+        System.out.printf("%s\n", h3.obtenerNombre());
         
     }
 }

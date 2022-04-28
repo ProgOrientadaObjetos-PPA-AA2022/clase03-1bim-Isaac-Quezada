@@ -9,17 +9,25 @@ package manejoclases03;
  *
  * @author reroes
  */
+import java.util.Locale;
+import java.util.Scanner;
 public class Ejecutable04 {
     
     public static void main(String[] args) {
-    
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US); //Configuracion de que "." sea decimal 
+        
         Hospital h1 = new Hospital();
         Hospital h2 = new Hospital();
         Hospital h3 = new Hospital();
         
-        double valor1 = 10000;
-        double valor2 = 20000;
-        double valor3 = 30000;
+        
+        System.out.print("Ingrese el valor del presupuesto del hospital");
+        double valor1 = entrada.nextDouble();
+        System.out.print("Ingrese el valor del presupuesto del hospital");
+        double valor2 = entrada.nextDouble();
+        System.out.print("Ingrese el valor del presupuesto del hospital");
+        double valor3 = entrada.nextDouble();
         
         h1.establecerPresupuesto(valor1);
         h2.establecerPresupuesto(valor2);
